@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ motorcycle.name }}</title>
+</head>
+<body>
+
+  <header>
+    <h1>Motorcycle Collection</h1>
+    <p>Een overzicht van verschillende motoren</p>
+  </header>
+
+  <section class="motorcycle">
+    <h2>{{ motorcycle.brand }} {{ motorcycle.name }}</h2>
+    <p><strong>Brand:</strong> {{ motorcycle.brand }}</p>
+    <p><strong>Year:</strong> {{ motorcycle.year }}</p>
+    <p><strong>Type:</strong> {{ motorcycle.type }}</p>
+    <p><strong>CC:</strong> {{ motorcycle.cc }}</p>
+
+    <br>
+    <a href="/">⬅ Terug naar de lijst</a>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+{
+  "motorcycles": [
+    {
+      "id": 1,
+      "name": "YZF-R1",
+      "brand": "Yamaha",
+      "year": 2023,
+      "type": "Sport",
+      "cc": 998
+    },
+    {
+      "id": 2,
+      "name": "CBR1000RR",
+      "brand": "Honda",
+      "year": 2023,
+      "type": "Sport",
+      "cc": 999
+    },
+    {
+      "id": 3,
+      "name": "Ninja ZX-10R",
+      "brand": "Kawasaki",
+      "year": 2023,
+      "type": "Sport",
+      "cc": 998
+    },
+    {
+      "id": 4,
+      "name": "Panigale V4",
+      "brand": "Ducati",
+      "year": 2023,
+      "type": "Sport",
+      "cc": 1103
+    },
+    {
+      "id": 5,
+      "name": "S1000RR",
+      "brand": "BMW",
+      "year": 2023,
+      "type": "Sport",
+      "cc": 999
+    },
+    {
+      "id": 6,
+      "name": "Street Glide",
+      "brand": "Harley-Davidson",
+      "year": 2023,
+      "type": "Cruiser",
+      "cc": 1868
+    },
+    {
+      "id": 7,
+      "name": "Tiger 900",
+      "brand": "Triumph",
+      "year": 2023,
+      "type": "Adventure",
+      "cc": 888
+    },
+    {
+      "id": 8,
+      "name": "390 Duke",
+      "brand": "KTM",
+      "year": 2023,
+      "type": "Naked",
+      "cc": 373
+    },
+    {
+      "id": 9,
+      "name": "GSX-R750",
+      "brand": "Suzuki",
+      "year": 2023,
+      "type": "Sport",
+      "cc": 750
+    },
+    {
+      "id": 10,
+      "name": "RSV4",
+      "brand": "Aprilia",
+      "year": 2023,
+      "type": "Sport",
+      "cc": 1099
+    }
+  ],
+  "brands": [
+    {"id": 1, "name": "Yamaha", "country": "Japan"},
+    {"id": 2, "name": "Honda", "country": "Japan"},
+    {"id": 3, "name": "Kawasaki", "country": "Japan"},
+    {"id": 4, "name": "Ducati", "country": "Italy"},
+    {"id": 5, "name": "BMW", "country": "Germany"},
+    {"id": 6, "name": "Harley-Davidson", "country": "USA"},
+    {"id": 7, "name": "Triumph", "country": "United Kingdom"},
+    {"id": 8, "name": "KTM", "country": "Austria"},
+    {"id": 9, "name": "Suzuki", "country": "Japan"},
+    {"id": 10, "name": "Aprilia", "country": "Italy"}
+  ]
+}
