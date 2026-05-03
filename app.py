@@ -1,17 +1,15 @@
-# https://flask.palletsprojects.com/
 # https://my-json-server.typicode.com/
-# https://requests.readthedocs.io/en/latest/
+# https://canvas.kdg.be/courses/55832/pages/oefening-json-api?module_item_id=1344505
 
 from flask import Flask, render_template
 import requests
 
 app = Flask(__name__)
 
-# vervang USERNAME en REPO met jouw github gegevens
-URL = "https://my-json-server.typicode.com/USERNAME/REPO"
+URL = "https://my-json-server.typicode.com/baseetkuye-coder/Api-webserver"
 
 
-# Stap 4: data ophalen via API en printen in de console
+# API get and printing in the console
 print("Data ophalen van de API...")
 response = requests.get(URL + "/motorcycles")
 data_check = response.json()
@@ -20,7 +18,7 @@ for m in data_check:
 print("Data succesvol opgehaald!\n")
 
 
-# home page met lijst van motorcycles en brands
+# home page
 @app.route("/")
 def home():
     response = requests.get(URL + "/motorcycles")
@@ -32,7 +30,7 @@ def home():
     return render_template("index.html", motorcycles=motorcycles, brands=brands)
 
 
-# detail pagina van 1 motorcycle
+# detail page
 @app.route("/motorcycles/<int:motorcycle_id>")
 def motorcycle_detail(motorcycle_id):
     response = requests.get(URL + "/motorcycles/" + str(motorcycle_id))
@@ -41,4 +39,4 @@ def motorcycle_detail(motorcycle_id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
